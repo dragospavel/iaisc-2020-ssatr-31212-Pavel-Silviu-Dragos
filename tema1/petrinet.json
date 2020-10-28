@@ -1,0 +1,230 @@
+{
+  "locations": [
+    {
+      "name": "p0",
+      "tokenNo": 1,
+      "nextTransition": [
+        "t0"
+      ]
+    },
+    {
+      "name": "p1",
+      "tokenNo": 0,
+      "nextTransition": [
+        "t1"
+      ]
+    },
+    {
+      "name": "p2",
+      "tokenNo": 0,
+      "nextTransition": [
+        "t2"
+      ]
+    },
+    {
+      "name": "p3",
+      "tokenNo": 0,
+      "nextTransition": [
+        "t3"
+      ]
+    },
+    {
+      "name": "p4",
+      "tokenNo": 1,
+      "nextTransition": [
+        "t3",
+        "t6"
+      ]
+    },
+    {
+      "name": "p5",
+      "tokenNo": 0,
+      "nextTransition": [
+        "t4"
+      ]
+    },
+    {
+      "name": "p6",
+      "tokenNo": 1,
+      "nextTransition": [
+        "t4",
+        "t5"
+      ]
+    },
+    {
+      "name": "p7",
+      "tokenNo": 0,
+      "nextTransition": [
+        "t5"
+      ]
+    },
+    {
+      "name": "p8",
+      "tokenNo": 0,
+      "nextTransition": [
+        "t6"
+      ]
+    },
+    {
+      "name": "p9",
+      "tokenNo": 0,
+      "nextTransition": [
+        "t7"
+      ]
+    },
+    {
+      "name": "p10",
+      "tokenNo": 0,
+      "nextTransition": [
+        "t8"
+      ]
+    },
+    {
+      "name": "p11",
+      "tokenNo": 0,
+      "nextTransition": [
+        "t9"
+      ]
+    },
+    {
+      "name": "p12",
+      "tokenNo": 0,
+      "nextTransition": [
+        "t9"
+      ]
+    },
+    {
+      "name": "p13",
+      "tokenNo": 0,
+      "nextTransition": [
+        "t10"
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "name": "t0",
+      "minTime": 0,
+      "maxTime": 0,
+      "nextLocation": [
+        "p1",
+        "p2"
+      ],
+      "prevLocation": [
+        "p0"
+      ]
+    },
+    {
+      "name": "t1",
+      "minTime": 1,
+      "maxTime": 1,
+      "nextLocation": [
+        "p3"
+      ],
+      "prevLocation": [
+        "p1"
+      ]
+    },
+    {
+      "name": "t2",
+      "minTime": 4,
+      "maxTime": 4,
+      "nextLocation": [
+        "p5"
+      ],
+      "prevLocation": [
+        "p2"
+      ]
+    },
+    {
+      "name": "t3",
+      "minTime": 0,
+      "maxTime": 0,
+      "nextLocation": [
+        "p7"
+      ],
+      "prevLocation": [
+        "p3","p4"
+      ]
+    },
+    {
+      "name": "t4",
+      "minTime": 0,
+      "maxTime": 0,
+      "nextLocation": [
+        "p8"
+      ],
+      "prevLocation": [
+        "p6","p5"
+      ]
+    },
+    {
+      "name": "t5",
+      "minTime": 2,
+      "maxTime": 4,
+      "nextLocation": [
+        "p9"
+      ],
+      "prevLocation": [
+        "p7","p6"
+      ]
+    },
+    {
+      "name": "t6",
+      "minTime": 2,
+      "maxTime": 5,
+      "nextLocation": [
+        "p10"
+      ],
+      "prevLocation": [
+        "p8","p4"
+      ]
+    },
+    {
+      "name": "t7",
+      "minTime": 3,
+      "maxTime": 4,
+      "nextLocation": [
+        "p11",
+        "p4",
+        "p6"
+      ],
+      "prevLocation": [
+        "p9"
+      ]
+    },
+    {
+      "name": "t8",
+      "minTime": 2,
+      "maxTime": 3,
+      "nextLocation": [
+        "p12",
+        "p4",
+        "p6"
+      ],
+      "prevLocation": [
+        "p10"
+      ]
+    },
+    {
+      "name": "t9",
+      "minTime": 0,
+      "maxTime": 0,
+      "nextLocation": [
+        "p13"
+      ],
+      "prevLocation": [
+        "p11","p12"
+      ]
+    },
+    {
+      "name": "t10",
+      "minTime": 0,
+      "maxTime": 0,
+      "nextLocation": [],
+      "prevLocation": [
+        "p13"
+      ]
+    }
+  ]
+}
